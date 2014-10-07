@@ -17,7 +17,7 @@ NAVIGATION STYLES
 .menu-toggler, .menu-toggler:visited {
 	border: none;
 	font-size:3em;
-	color:$black;
+	color:$white;
 	position:absolute;
 	top:.2em;
 	left:.2em;
@@ -31,8 +31,13 @@ NAVIGATION STYLES
 
 
 .topmenu {
+	display:none;
+
+	@include breakpoint(laptop) {
+		display: block;
+		padding-bottom:1.677em;
+	}
 	.wrap {
-		
 		background-color:$red;
 	}
 }

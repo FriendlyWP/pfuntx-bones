@@ -1100,7 +1100,7 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\0000333}}
 #inner-content {
-  padding: 1.677em 0;
+  padding: 0 0 1.677em 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\0000337}}
