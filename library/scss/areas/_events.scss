@@ -2,11 +2,18 @@
 
 .ui-widget-header.ui-widget-header {
 	background-image: none;
-	background-color:$meta-color;
+	background-color:lighten($yellow, 5%);
+	color:$white;
 }
 
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-	background-color:darken($meta-color, 5%) !important;
+	background-color:lighten($yellow, 35%) !important;
+}
+
+.eo-fullcalendar {
+	.ui-widget-header, .ui-widget-content {
+		border-color:$yellow;
+	}
 }
 
 #main .fc-header td {

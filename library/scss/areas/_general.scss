@@ -240,7 +240,7 @@ POSTS & CONTENT STYLES
 
 	table {
 		width: 100%;
-		border: 1px solid $gray;
+		border: 1px solid darken($yellow, 10%);
 		margin-bottom: 1.5em;
 
 		caption {
@@ -253,16 +253,16 @@ POSTS & CONTENT STYLES
 	}
 
 	tr {
-		border-bottom: 1px solid $gray;
+		border-bottom: 1px solid darken($yellow, 10%);
 
 		&:nth-child(even) {
-			background-color: lighten($light-gray, 5%);
+			background-color: lighten($yellow, 35%);
 		}
 	}
 
 	td {
 		padding: 7px;
-		border-right: 1px solid $gray;
+		border-right: 1px solid darken($yellow, 10%);
 
 		&:last-child {
 			border-right: 0;
@@ -270,9 +270,9 @@ POSTS & CONTENT STYLES
 	}
 
 	th {
-		background-color: $light-gray;
-		border-bottom: 1px solid $gray;
-		border-right: 1px solid $gray;
+		background-color: lighten($yellow, 25%);
+		border-bottom: 1px solid darken($yellow, 10%);
+		border-right: 1px solid darken($yellow, 10%);
 
 		&:last-child {
 			border-right: 0;

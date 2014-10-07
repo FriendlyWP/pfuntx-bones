@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:iCalendar-Ruby
+BEGIN:VEVENT
+UID:f8500242-0b4c-46e7-be94-435226d2d650@tx-pflugerville3.civicplus.com
+URL:/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=55
+CREATED:20141007T213030Z
+LAST-MODIFIED:20140916T180604Z
+SUMMARY:Pfirecracker Pfestival
+DTSTART:20150703T190000Z
+DTEND:20150704T040000Z
+LOCATION:Lake Pflugerville
+DESCRIPTION:Annual Fourth of July festival held on the north and south grounds of Lake Pflugerville. Vendors, children's areas, live music on two stages, and more. In 2015, the event will be held as noted, on the day before the national holiday. http://www.pflugervilletx.gov/calendar.aspx?EID=15197
+END:VEVENT
+BEGIN:VEVENT
+UID:39399ff6-2605-432d-bea5-7cbbfd5d750a@tx-pflugerville3.civicplus.com
+URL:/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=55
+CREATED:20141007T213030Z
+LAST-MODIFIED:20140916T183400Z
+SUMMARY:40th Annual Deutschen Pfest
+DTSTART:20150515T230000Z
+DTEND:20150517T230000Z
+LOCATION:Gilleland Creek Park
+DESCRIPTION:Live music, vendors, carnival, petting zoo and more http://www.pflugervilletx.gov/calendar.aspx?EID=15215
+END:VEVENT
+BEGIN:VEVENT
+UID:5eb23d6a-6579-4776-b35e-5d696bd2715e@tx-pflugerville3.civicplus.com
+URL:/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=55
+CREATED:20141007T213030Z
+LAST-MODIFIED:20131105T185137Z
+SUMMARY:2014 Pfall Chili Pfest
+DTSTART:20141018T170000Z
+DTEND:20141019T003000Z
+LOCATION:
+DESCRIPTION: http://www.pflugervilletx.gov/calendar.aspx?EID=13610
+END:VEVENT
+END:VCALENDAR

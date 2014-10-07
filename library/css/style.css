@@ -1351,7 +1351,7 @@ POSTS & CONTENT STYLES
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003241}}
 .entry-content table {
   width: 100%;
-  border: 1px solid #C6C9C2;
+  border: 1px solid #e8a51c;
   margin-bottom: 1.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003246}}
@@ -1364,16 +1364,16 @@ POSTS & CONTENT STYLES
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003255}}
 .entry-content tr {
-  border-bottom: 1px solid #C6C9C2;
+  border-bottom: 1px solid #e8a51c;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003258}}
 .entry-content tr:nth-child(even) {
-  background-color: #f4f4f4;
+  background-color: #fdf8ec;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003263}}
 .entry-content td {
   padding: 7px;
-  border-right: 1px solid #C6C9C2;
+  border-right: 1px solid #e8a51c;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003267}}
 .entry-content td:last-child {
@@ -1381,9 +1381,9 @@ POSTS & CONTENT STYLES
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003272}}
 .entry-content th {
-  background-color: #e7e7e8;
-  border-bottom: 1px solid #C6C9C2;
-  border-right: 1px solid #C6C9C2;
+  background-color: #f9e5be;
+  border-bottom: 1px solid #e8a51c;
+  border-right: 1px solid #e8a51c;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003277}}
 .entry-content th:last-child {
@@ -1965,94 +1965,100 @@ nav {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\000033}}
 .ui-widget-header.ui-widget-header {
   background-image: none;
-  background-color: #C6C9C2;
+  background-color: #efc061;
+  color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\000039}}
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-  background-color: #b9bdb4 !important;
+  background-color: #fdf8ec !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000314}}
+.eo-fullcalendar .ui-widget-header, .eo-fullcalendar .ui-widget-content {
+  border-color: #edb74a;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000319}}
 #main .fc-header td {
   display: block;
   width: 100%;
   text-align: left;
 }
 @media (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000319}}
   #main .fc-header td {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000327}}
   #main .fc-header td.fc-header-left, #main .fc-header td.fc-header-right {
     width: 25%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000331}}
   #main .fc-header td.fc-header-right {
     text-align: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000335}}
   #main .fc-header td.fc-header-center {
     width: 48%;
     text-align: center;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000343}}
 .eventorganiser-event-meta h4 {
   border-bottom: 1px solid #666766;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000350}}
 .widget .eo-agenda-widget ul.dates,
 .widget .eo-agenda-widget li.date {
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000355}}
 .widget .eo-agenda-widget {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000358}}
 .widget .eo-agenda-widget .agenda-nav {
   position: absolute;
   bottom: -.5em;
   right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000366}}
 .mar-right {
   margin-right: .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000370}}
 #eo-event-cat {
   height: auto;
   padding: .2em;
   font-size: .9em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000377}}
 .event-entry-meta .eo-event-meta {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000380}}
 .event-entry-meta time {
   font-weight: 500;
   font-size: 1.1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000385}}
 .event-entry-meta p {
   width: 58%;
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000391}}
 .eo-events-widget a {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\0000395}}
 .event-time {
   background-color: #97ab5b;
   border-radius: .3em;
@@ -2066,12 +2072,12 @@ nav {
   font-size: .9em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\00003109}}
 .event-title {
   display: inline-block;
   width: 75%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_events\.scss}line{font-family:\00003113}}
 .event-title .learnmore {
   display: inline-block;
   margin-left: .5em;

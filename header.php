@@ -93,11 +93,20 @@
 					
 					<a href="#my-menu" class="menu-toggler"><i class="fa fa-bars"></i></a>
 
-					<header class="article-header">
-
-						<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
-					</header> <?php // end article header ?>
+					<?php if ( is_home() || is_single()  ) { // blog page ?>
+							<h1 class="page-title" itemprop="headline">Blog</h1>
+					<?php } elseif ( is_tax() ) { ?>
+							    	<?php post_type_archive_title(); ?><?php 
+							    	$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); 
+							    	$title = $term->name; ?>
+							    		<h1 class="page-title">
+							    	    		<?php echo $title; ?>
+							        	</h1>
+					<?php } elseif (is_post_type_archive()  ) { // not home page ?>
+							<h1 class="page-title" itemprop="headline"><?php post_type_archive_title(); ?></h1>
+					 <?php } elseif ( !is_front_page() ) { ?>
+				    	<h1 class="page-title"><?php the_title(); ?></h1>
+				    <?php } ?>
 				</div>
 
 				<div class="topmenu cf">
