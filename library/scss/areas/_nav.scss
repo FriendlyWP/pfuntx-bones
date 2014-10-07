@@ -1,0 +1,243 @@
+/*********************
+NAVIGATION STYLES
+*********************/
+
+#menu-social-menu {
+	margin-top:0em;
+}
+
+#my-content #my-menu {
+  display: none;
+}
+
+#my-menu:not( .mm-menu ) {
+ /* display: none; */
+}
+
+.menu-toggler, .menu-toggler:visited {
+	border: none;
+	font-size:3em;
+	color:$black;
+	position:absolute;
+	top:.2em;
+	left:.2em;
+
+
+	@include breakpoint(laptop) {
+		display:none;
+	}
+}
+
+
+
+.topmenu {
+	.wrap {
+		
+		background-color:$red;
+	}
+}
+
+
+
+nav {
+	display:inline-block;
+	width:80%;
+}
+.nav {
+	border-bottom: 0;
+	margin: 0;
+	font-family:$title-family;
+
+
+	&.top-nav {
+		width:100%;
+		padding:0;
+		display: none;
+		text-transform: uppercase;
+
+
+		@include breakpoint(laptop) {
+			display:inline-block;
+			line-height: 50px;
+			margin-bottom: -6px;
+		}
+	}
+
+	/* equally spaces out list items in main menu, see http://css-tricks.com/equidistant-objects-with-css/ */
+	/* &.top-nav:after {
+		content:'';
+		width:100%;
+		display: inline-block;
+		height:0;
+		line-height: 0;
+		font-size:0;
+	} */
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+
+		a, a:visited {
+			display: block;
+			color: $white;
+			border:none;
+			font-size:1.3em;
+			padding: 0 .75em;
+			background:url(../images/bg-nav-dots.png) right no-repeat;
+
+			&:hover, &:focus {
+				color: $yellow;
+			}
+
+		}
+
+		/* &.current-menu-ancestor, &.current-menu-item {
+			> a {
+				font-weight: 700;	
+			}
+			
+		} */
+
+		@include breakpoint(laptop) {
+			float: left;
+			position: relative;
+
+			ul.sub-menu,
+			ul.children {
+				background-color: $red;
+				display: none;
+				padding:0;
+				margin:0;
+				width:auto;
+				border-top: 0;
+				position: absolute;
+				z-index: 8999;
+				text-align:left;
+				box-shadow: .2em .2em .2em rgba(102, 102, 102, .3);
+				font-size: .8em;
+				text-transform: none;
+
+
+				li {
+
+					a {
+						border-right: 0;
+						display: block;
+						width: 180px;
+						border-bottom: 1px dotted $white;
+						background-image: none;
+						line-height: 1.2em;
+						padding:.4em 1em;
+
+						&:hover,
+						&:focus {}
+
+						&:link {}
+					}
+
+					&:first-child {}
+
+					&:last-child {
+
+						a {
+							border-bottom: 0;
+						}
+					}
+					ul, ul ul {
+						top:0;
+						left:100%;
+
+						li:last-child {
+							a {
+								margin-bottom:0;
+								border-color: transparent;	
+							}
+							
+						}
+						
+					}
+				}
+
+				/* highlight sub-menu current page */
+				li.current-menu-item,
+				li.current_page_item,
+				li.current-page-ancestor {
+					& > a {
+						border: none;
+					}
+				}
+			}
+
+			&:hover > ul {
+				display: block;
+				visibility: visible;
+				top:98%;
+				left:0;
+				@include transition(all .5s ease);
+			}
+
+			&:last-of-type:hover > ul {
+				display: block;
+				visibility: visible;
+				right:0;
+				left:auto;
+			}
+
+			&:last-of-type > a {
+				background:none;
+			}
+		}
+
+
+	} /* end .menu li */
+
+} /* end .nav */
+
+.social-nav {
+	display:none;
+	font-size: .7em;
+	text-align:right;
+	margin:0;
+	padding:0;
+
+	@include breakpoint(laptop) {
+		display:inline-block;
+		float:right;
+		width:19.8%;
+		background-color:$yellow;
+		position:relative;
+		line-height:50px;
+		vertical-align: middle;
+		margin-bottom: -4px;
+
+		&:before {
+			position:absolute;
+			content: '';
+			bottom:0;
+			left:0;
+			width:0;
+			height:0;
+			line-height:50px;
+			background-color:$yellow;
+			border-left: 50px solid $red;
+	   		border-bottom: 50px solid $yellow; 
+	   			
+		}
+
+		li {
+			display: inline-block;
+			float:none;
+
+			a, a:visited {
+				display: block;
+				vertical-align: text-bottom;
+				line-height: 40px;
+				padding-top:5px;
+
+				&:hover {
+					color:$red;
+				}
+			}
+		}
+	}
+}
