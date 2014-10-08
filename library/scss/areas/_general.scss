@@ -40,7 +40,7 @@ body {
 
 .topbar {
 	background-color: $blue;
-	height:3em;
+	min-height:3em;
 	margin-bottom:1.5em;
 }
 
@@ -197,8 +197,11 @@ p {
 .header-image {
 	display:inline-block;
 	line-height:0;
+	width:100%;
+
 	& > img {
 		margin-bottom: 0;
+		width:100%;
 	}
 }
 
@@ -561,12 +564,16 @@ FOOTER STYLES
 	@include breakpoint(laptop) {
 		margin:0 0 .5em;
 		text-align: left;
-		display:inline-block;
+		
 
 		& > div {
 			display:inline-block;
 		}
 	}
+}
+
+.copyright {
+	text-align: center;
 }
 
 .contact {

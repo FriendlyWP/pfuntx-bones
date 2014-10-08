@@ -1147,7 +1147,7 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\0000341}}
 .topbar {
   background-color: #318bb5;
-  height: 3em;
+  min-height: 3em;
   margin-bottom: 1.5em;
 }
 
@@ -1315,28 +1315,30 @@ p {
 .header-image {
   display: inline-block;
   line-height: 0;
+  width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003202}}
 .header-image > img {
   margin-bottom: 0;
+  width: 100%;
 }
 
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003212}}
 .hentry {
   background-color: #fff;
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003220}}
 .hentry footer p {
   margin: 0;
 }
 
 /* end .hentry */
 /* post meta */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003230}}
 .byline {
   color: #C6C9C2;
   font-style: italic;
@@ -1344,17 +1346,17 @@ POSTS & CONTENT STYLES
 }
 
 /* entry content */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003241}}
 .entry-content {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003244}}
 .entry-content table {
   width: 100%;
   border: 1px solid #e8a51c;
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003249}}
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -1362,41 +1364,41 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003258}}
 .entry-content tr {
   border-bottom: 1px solid #e8a51c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003261}}
 .entry-content tr:nth-child(even) {
   background-color: #fdf8ec;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003266}}
 .entry-content td {
   padding: 7px;
   border-right: 1px solid #e8a51c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003270}}
 .entry-content td:last-child {
   border-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003275}}
 .entry-content th {
   background-color: #f9e5be;
   border-bottom: 1px solid #e8a51c;
   border-right: 1px solid #e8a51c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003280}}
 .entry-content th:last-child {
   border-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003282}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003285}}
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003292}}
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1405,7 +1407,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003301}}
 .entry-content pre {
   background: #666766;
   color: #e7e7e8;
@@ -1416,12 +1418,12 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003313}}
 #breadcrumbs {
   font-size: .8em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003318}}
 blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -1431,7 +1433,7 @@ blockquote {
   position: relative;
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003327}}
 blockquote:before {
   font-family: 'FontAwesome';
   content: '\f10d';
@@ -1439,14 +1441,14 @@ blockquote:before {
   left: -.75em;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003335}}
 blockquote cite {
   display: block;
   margin: .677em 0;
   font-weight: 400;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003343}}
 img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
@@ -1456,7 +1458,7 @@ img {
 /*
 Align all images center for smallest screens
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003352}}
 .alignleft, img.alignleft,
 .alignright, img.alignright,
 .aligncenter, img.aligncenter {
@@ -1466,7 +1468,7 @@ Align all images center for smallest screens
   clear: both;
 }
 @media (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003352}}
   .alignleft, img.alignleft,
   .alignright, img.alignright,
   .aligncenter, img.aligncenter {
@@ -1475,7 +1477,7 @@ Align all images center for smallest screens
 }
 
 @media (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003366}}
   .alignleft, img.alignleft {
     margin-right: 1.5em;
     float: left;
@@ -1484,7 +1486,7 @@ Align all images center for smallest screens
 }
 
 @media (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003374}}
   .alignright, img.alignright {
     margin-left: 1.5em;
     float: right;
@@ -1492,7 +1494,7 @@ Align all images center for smallest screens
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003382}}
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -1502,7 +1504,7 @@ Align all images center for smallest screens
   overflow: hidden;
   margin-bottom: 1.677em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003391}}
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -1511,7 +1513,7 @@ Align all images center for smallest screens
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003400}}
 .wp-caption, .html5-captions .wp-caption {
   max-width: 100%;
   background: #666766;
@@ -1519,12 +1521,12 @@ Align all images center for smallest screens
   color: #fff;
   /* images inside wp-caption */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003406}}
 .wp-caption a, .wp-caption a:visited, .html5-captions .wp-caption a, .html5-captions .wp-caption a:visited {
   color: #edb74a;
   border-color: #edb74a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003409}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003412}}
 .wp-caption img, .html5-captions .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
@@ -1532,7 +1534,7 @@ Align all images center for smallest screens
 }
 
 /* end .wp-caption */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003420}}
 .wp-caption-text {
   font-size: 0.85em;
   margin: .2em 0 .3em;
@@ -1541,7 +1543,7 @@ Align all images center for smallest screens
 }
 
 /* image gallery styles */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003432}}
 .gallery-item {
   display: inline-block;
   margin: 0 2% 1em 0;
@@ -1549,23 +1551,23 @@ Align all images center for smallest screens
   vertical-align: top;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003436}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003439}}
 .gallery-item img {
   margin-bottom: 0;
 }
 @media (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003432}}
   .gallery-item {
     width: 49%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003445}}
   .gallery-item:nth-child(2n+2) {
     margin-right: 0;
   }
 }
 
 /* gallery caption styles */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003457}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003460}}
 .tags {
   margin: 0;
 }
@@ -1573,17 +1575,17 @@ Align all images center for smallest screens
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003465}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003468}}
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003469}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003472}}
 .pagination {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003472}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003475}}
 .pagination ul {
   display: inline-block;
   background-color: #fff;
@@ -1592,7 +1594,7 @@ PAGE NAVI STYLES
   clear: both;
   border-radius: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003481}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003484}}
 .pagination li {
   padding: 0;
   margin: 0;
@@ -1601,7 +1603,7 @@ PAGE NAVI STYLES
   overflow: hidden;
   border-right: 1px solid #C6C9C2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003490}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003493}}
 .pagination a, .pagination span {
   margin: 0;
   text-decoration: none;
@@ -1614,17 +1616,17 @@ PAGE NAVI STYLES
   display: block;
   color: #318bb5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003502}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003505}}
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
   background-color: #318bb5;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003508}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003511}}
 .pagination .current {
   cursor: default;
   color: #666766;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003512}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003515}}
 .pagination .current:hover, .pagination .current:focus {
   background-color: #fff;
   color: #666766;
@@ -1632,11 +1634,11 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003525}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003528}}
 .wp-prev-next .prev-link {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003529}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003532}}
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1645,7 +1647,7 @@ PAGE NAVI STYLES
 /*********************
 FOOTER STYLES
 *********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003543}}
 .footer {
   clear: both;
   background-color: #318bb5;
@@ -1653,39 +1655,43 @@ FOOTER STYLES
   padding: 1em 0;
   font-size: .9em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003547}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003550}}
 .footer p {
   margin-bottom: .677em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003551}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003554}}
 .footer a, .footer a:visited {
   color: #C6C9C2;
   border-color: #C6C9C2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003557}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003560}}
 .organization-address, .copyright {
   text-align: center;
   margin: 0 auto .5em;
 }
 @media (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003557}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003560}}
   .organization-address, .copyright {
     margin: 0 0 .5em;
     text-align: left;
-    display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003569}}
   .organization-address > div, .copyright > div {
     display: inline-block;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003572}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003575}}
+.copyright {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003579}}
 .contact {
   margin-top: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003575}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003582}}
 .contact .item {
   display: inline-block;
   margin-right: 1em;
@@ -1693,7 +1699,7 @@ FOOTER STYLES
   border-right: 1px solid #C6C9C2;
   line-height: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003582}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_general\.scss}line{font-family:\00003589}}
 .contact .item:last-of-type {
   border-right: none;
   margin-right: 0;
@@ -1703,6 +1709,40 @@ FOOTER STYLES
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\000031}}
 .widget {
   margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\000037}}
+.footer-widgets .widget {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\0000311}}
+.footer-widgets > div {
+  float: left;
+  margin-right: 3.333%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\0000315}}
+.footer-widgets > div:last-of-type {
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\0000321}}
+.footer-widgets.floats_1 > div {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\0000327}}
+.footer-widgets.floats_2 > div {
+  width: 48.3335%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\0000333}}
+.footer-widgets.floats_3 > div {
+  width: 30%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\0000339}}
+.footer-widgets.floats_4 > div {
+  width: 22.5002%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_sidebars\.scss}line{font-family:\0000345}}
+.footer-widgets.floats_5 > div {
+  width: 17.3336%;
 }
 
 /*********************
@@ -1720,17 +1760,18 @@ NAVIGATION STYLES
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000313}}
 #my-menu:not(.mm-menu) {
-  /* display: none; */
+  display: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000317}}
 .menu-toggler, .menu-toggler:visited {
   border: none;
-  font-size: 3em;
+  font-size: 2em;
   color: #fff;
-  position: absolute;
-  top: .2em;
-  left: .2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: .5em .25em;
 }
 @media (min-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000317}}
@@ -1739,29 +1780,29 @@ NAVIGATION STYLES
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000334}}
 .topmenu {
   display: none;
 }
 @media (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000334}}
   .topmenu {
     display: block;
     padding-bottom: 1.677em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000341}}
 .topmenu .wrap {
   background-color: #cd4837;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000348}}
 nav {
   display: inline-block;
   width: 80%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000352}}
 .nav {
   border-bottom: 0;
   margin: 0;
@@ -1777,7 +1818,7 @@ nav {
   } */
   /* end .menu li */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000358}}
 .nav.top-nav {
   width: 100%;
   padding: 0;
@@ -1785,14 +1826,14 @@ nav {
   text-transform: uppercase;
 }
 @media (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000358}}
   .nav.top-nav {
     display: inline-block;
     line-height: 50px;
     margin-bottom: -6px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000382}}
 .nav li {
   display: inline-block;
   vertical-align: middle;
@@ -1803,7 +1844,7 @@ nav {
   	
   } */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000386}}
 .nav li a, .nav li a:visited {
   display: block;
   color: #fff;
@@ -1812,17 +1853,17 @@ nav {
   padding: 0 .75em;
   background: url(../images/bg-nav-dots.png) right no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000394}}
 .nav li a:hover, .nav li a:focus, .nav li a:visited:hover, .nav li a:visited:focus {
   color: #edb74a;
 }
 @media (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\0000382}}
   .nav li {
     float: left;
     position: relative;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003111}}
   .nav li ul.sub-menu,
   .nav li ul.children {
     background-color: #cd4837;
@@ -1839,7 +1880,7 @@ nav {
     text-transform: none;
     /* highlight sub-menu current page */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003129}}
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     border-right: 0;
@@ -1850,26 +1891,26 @@ nav {
     line-height: 1.2em;
     padding: .4em 1em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003148}}
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003152}}
   .nav li ul.sub-menu li ul, .nav li ul.sub-menu li ul ul,
   .nav li ul.children li ul,
   .nav li ul.children li ul ul {
     top: 0;
     left: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003157}}
   .nav li ul.sub-menu li ul li:last-child a, .nav li ul.sub-menu li ul ul li:last-child a,
   .nav li ul.children li ul li:last-child a,
   .nav li ul.children li ul ul li:last-child a {
     margin-bottom: 0;
     border-color: transparent;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003171}}
   .nav li ul.sub-menu li.current-menu-item > a,
   .nav li ul.sub-menu li.current_page_item > a,
   .nav li ul.sub-menu li.current-page-ancestor > a,
@@ -1878,7 +1919,7 @@ nav {
   .nav li ul.children li.current-page-ancestor > a {
     border: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003176}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003177}}
   .nav li:hover > ul {
     display: block;
     visibility: visible;
@@ -1887,21 +1928,21 @@ nav {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003185}}
   .nav li:last-of-type:hover > ul {
     display: block;
     visibility: visible;
     right: 0;
     left: auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003192}}
   .nav li:last-of-type > a {
     background: none;
   }
 }
 
 /* end .nav */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003202}}
 .social-nav {
   display: none;
   font-size: .7em;
@@ -1910,7 +1951,7 @@ nav {
   padding: 0;
 }
 @media (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003202}}
   .social-nav {
     display: inline-block;
     float: right;
@@ -1921,7 +1962,7 @@ nav {
     vertical-align: middle;
     margin-bottom: -4px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003219}}
   .social-nav:before {
     position: absolute;
     content: '';
@@ -1934,19 +1975,19 @@ nav {
     border-left: 50px solid #cd4837;
     border-bottom: 50px solid #edb74a;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003232}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003233}}
   .social-nav li {
     display: inline-block;
     float: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003237}}
   .social-nav li a, .social-nav li a:visited {
     display: block;
     vertical-align: text-bottom;
     line-height: 40px;
     padding-top: 5px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_nav\.scss}line{font-family:\00003243}}
   .social-nav li a:hover, .social-nav li a:visited:hover {
     color: #cd4837;
   }
@@ -1954,11 +1995,16 @@ nav {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_mobile_nav\.scss}line{font-family:\000031}}
 #my-menu {
-  background-color: #C6C9C2;
+  background-color: #318bb5;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_mobile_nav\.scss}line{font-family:\000034}}
-#my-menu a {
+#my-menu a, #my-menu a:visited {
   border: none;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Michelle\/Documents\/Websites\/pfun\.dev\/wp-content\/themes\/pfuntx-bones\/library\/scss\/areas\/_mobile_nav\.scss}line{font-family:\0000310}}
+#my-menu .current-menu-item a, #my-menu .current-menu-item a:visited {
+  background-color: #266c8d;
 }
 
 /* EVENTS */

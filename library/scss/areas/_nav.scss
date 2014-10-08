@@ -7,20 +7,21 @@ NAVIGATION STYLES
 }
 
 #my-content #my-menu {
-  display: none;
+  	display: none;
 }
 
 #my-menu:not( .mm-menu ) {
- /* display: none; */
+ 	display: none; 
 }
 
 .menu-toggler, .menu-toggler:visited {
 	border: none;
-	font-size:3em;
+	font-size:2em;
 	color:$white;
-	position:absolute;
-	top:.2em;
-	left:.2em;
+	position:relative;
+	top:0;
+	left:0;
+	padding:.5em .25em;
 
 
 	@include breakpoint(laptop) {

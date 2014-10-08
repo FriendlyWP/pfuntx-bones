@@ -1,3 +1,49 @@
 .widget {
 	margin-bottom:1.5em;
 }
+
+.footer-widgets {
+
+	.widget {
+		margin-bottom:0;
+	}
+
+	& > div {
+		float:left;
+		margin-right: 3.333%;
+
+		&:last-of-type {
+			margin-right:0;
+		}
+	}
+
+	&.floats_1 {
+		& > div {
+			width:100%;
+		}
+	}
+
+	&.floats_2 {
+		& > div {
+			width:48.3335%;
+		}
+	}
+
+	&.floats_3 {
+		& > div {
+			width:30%;
+		}
+	}
+
+	&.floats_4 {
+		& > div {
+			width:22.5002%;
+		}
+	}
+
+	&.floats_5 {
+		& > div {
+			width:17.3336%;
+		}
+	}
+}

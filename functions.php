@@ -83,13 +83,23 @@ new image size.
 function bones_register_sidebars() {
 	register_sidebar(array(
 		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'bonestheme' ),
+		'name' => __( 'Sidebar Widgets', 'bonestheme' ),
 		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
+
+  register_sidebar(array(
+    'id' => 'footer1',
+    'name' => __( 'Footer Widgets', 'bonestheme' ),
+    'description' => __( 'The footer area.', 'bonestheme' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="widgettitle">',
+    'after_title' => '</h4>',
+  ));
 
 } // don't remove this bracket!
 
@@ -180,4 +190,15 @@ add_filter( 'wpseo_use_page_analysis', '__return_false' );
 add_filter('wpseo_metabox_prio' , 'my_wpseo_metabox_prio' );
 function my_wpseo_metabox_prio() {
   return 'low' ;                                
+}
+
+// REMOVE WIDGET TITLE IF IT BEGINS WITH EXCLAMATION POINT
+// To use, add a widget and in the Title field put !The title here
+// The title will show in the control panel, but not on the site itself
+add_filter( 'widget_title', 'remove_widget_title' );
+function remove_widget_title( $widget_title ) {
+    if ( substr ( $widget_title, 0, 1 ) == '!' )
+        return;
+    else 
+        return ( $widget_title );
 }

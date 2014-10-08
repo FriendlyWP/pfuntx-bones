@@ -1,7 +1,14 @@
 #my-menu {
-	background-color:$gray;
+	background-color:$blue;
 
-	a {
+	a, a:visited {
 		border: none;
+		color:$white;
+	}
+
+	.current-menu-item {
+		a, a:visited {
+			background-color:darken($blue, 10%);
+		}
 	}
 }

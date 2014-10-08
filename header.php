@@ -78,7 +78,7 @@
 				</div>
 					<div class="topbar">
 						<div class="wrap">
-							&nbsp;							
+							<a href="#my-menu" class="menu-toggler"><i class="fa fa-bars"></i></a>							
 						</div>
 					</div>
 
@@ -91,7 +91,7 @@
 						<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/header-default.jpg" alt="<?php echo get_bloginfo('description'); ?>" /></a>
 					<?php } ?>
 					
-					<a href="#my-menu" class="menu-toggler"><i class="fa fa-bars"></i></a>
+					
 
 					<?php if ( is_home() || is_single()  ) { // blog page ?>
 							<h1 class="page-title" itemprop="headline">Blog</h1>

@@ -201,7 +201,6 @@ function bones_theme_support() {
 		array(
 			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
 			'social-nav' => __( 'The Social Menu', 'bonestheme' ),   // social nav
-			'footer-nav' => __( 'The Footer Menu', 'bonestheme' ) // secondary nav in footer
 		)
 	);
 } /* end bones theme support */
