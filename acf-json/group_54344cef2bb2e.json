@@ -1,6 +1,6 @@
 {
     "key": "group_54344cef2bb2e",
-    "title": "Attraction Information",
+    "title": "Item Description, Info & Images",
     "fields": [
         {
             "key": "field_54344cf7125ff",
@@ -86,23 +86,6 @@
             "disabled": 0
         },
         {
-            "key": "field_54344daf12604",
-            "label": "Address",
-            "name": "address",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
             "key": "field_54344de812606",
             "label": "Map",
             "name": "map",
@@ -138,6 +121,20 @@
                 "operator": "==",
                 "value": "attraction"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "hotel"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "dining"
+            }
         ]
     ],
     "menu_order": 0,
@@ -145,5 +142,13 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": ""
+    "hide_on_screen": [
+        "custom_fields",
+        "discussion",
+        "comments",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ]
 }

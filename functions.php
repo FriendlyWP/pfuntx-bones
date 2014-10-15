@@ -202,3 +202,39 @@ function remove_widget_title( $widget_title ) {
     else 
         return ( $widget_title );
 }
+
+add_filter('wp_list_categories', 'add_slug_css_list_categories');
+function add_slug_css_list_categories($list) {
+
+$cats = get_categories();
+  foreach($cats as $cat) {
+  $find = 'cat-item-' . $cat->term_id . '"';
+  $replace = 'category-' . $cat->slug . '"';
+  $list = str_replace( $find, $replace, $list );
+  $find = 'cat-item-' . $cat->term_id . ' ';
+  $replace = 'category-' . $cat->slug . ' ';
+  $list = str_replace( $find, $replace, $list );
+  }
+
+return $list;
+}
+
+// PRINT CATEGORY COLORS FOR EVENT WIDGET IN HEADER
+add_action( 'wp_print_styles', 'my_print_event_cat_colours' );
+function my_print_event_cat_colours(){
+    if (function_exists('eo_get_category_color')) {
+        $cats = get_terms( 'event-category' );
+        if( $cats ){
+
+            echo '<style>';
+            foreach( $cats as $cat ){
+                     printf( 
+                          ".ew-catlink.ew-%s{ background: %s;}\n", 
+                          sanitize_html_class( $cat->slug ), 
+                          eo_get_category_color( $cat ) 
+                     ); 
+            }
+            echo '</style>';
+        }
+    }
+}

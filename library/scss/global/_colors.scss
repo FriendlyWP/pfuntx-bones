@@ -18,13 +18,14 @@ $red:				#cd4837;
 $orange:			#f27f42;
 
 $yellow:            #edb74a;
+$light-yellow:		#f8f2e6;
 
 $green:             #97ab5b;
 
 $blue:              #318bb5;
 
 $link-color:        $blue;
-$link-hover:        darken($link-color, 9%);
+$link-hover:        $orange;
 
 $border-color:      $black;
 $disabled-color:    $light-gray;

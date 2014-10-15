@@ -31,11 +31,6 @@ get_header(); ?>
 		    	<?php if ( function_exists('yoast_breadcrumb') ) {
 							yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 						} ?>
-				<!-- Page header-->
-		<header class="article-header">
-					<h1 class="page-title"><?php
-						printf( __( '%s', 'eventorganiser' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-					?></h1>
 
 				<!-- If the category has a description display it-->
 					<?php

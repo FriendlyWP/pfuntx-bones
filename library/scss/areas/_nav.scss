@@ -29,8 +29,6 @@ NAVIGATION STYLES
 	}
 }
 
-
-
 .topmenu {
 	display:none;
 
@@ -42,7 +40,6 @@ NAVIGATION STYLES
 		background-color:$red;
 	}
 }
-
 
 
 nav {
@@ -87,12 +84,20 @@ nav {
 			display: block;
 			color: $white;
 			border:none;
-			font-size:1.3em;
+			font-size:1.1em;
 			padding: 0 .75em;
 			background:url(../images/bg-nav-dots.png) right no-repeat;
 
 			&:hover, &:focus {
 				color: $yellow;
+			}
+
+			@include breakpoint('desktop') {
+				font-size:1.2em;
+			}
+
+			@include breakpoint('tv') {
+				font-size:1.3em;
 			}
 
 		}
@@ -201,7 +206,7 @@ nav {
 
 .social-nav {
 	display:none;
-	font-size: .7em;
+	font-size: .5em;
 	text-align:right;
 	margin:0;
 	padding:0;
@@ -239,6 +244,7 @@ nav {
 				vertical-align: text-bottom;
 				line-height: 40px;
 				padding-top:5px;
+				padding-right:1.2em;
 
 				&:hover {
 					color:$red;
@@ -246,4 +252,67 @@ nav {
 			}
 		}
 	}
+
+	@include breakpoint('desktop') {
+		font-size:.6em;
+	}
+}
+
+.menu-sidebar-menu-container {
+	ul {
+		margin:0;
+		padding:0;
+		list-style: none;
+		line-height: 1em;
+	}
+	.menu-festivals { 
+		a, a:visited {
+			background: $blue url(../images/icon-balloon.png) center right no-repeat;
+		}
+	}
+
+	.menu-maps { 
+		a, a:visited {
+			background: $blue url(../images/icon-maps.png) center right no-repeat;
+		}
+	}
+
+	.menu-parks { 
+		a, a:visited {
+			background: $blue url(../images/icon-parks.png) center right no-repeat;
+		}
+	}
+
+	a, a:visited {
+		padding:.5em 0 .3em .677em;
+		background-color:$blue;
+		color:$white;
+		font-family: $title-family;
+		font-size: 1.3em;	
+		display: block;
+		height:40px;
+		line-height: 1em;
+		border: none;
+
+		&::after {
+		    content:' \f054';
+		    font-family: 'FontAwesome';
+		    font-size:.9em;
+		    padding-top:.2em;
+		  }
+
+		&:hover {
+			border:none;
+			background-color:$orange;
+		}
+	}
+
+	li {
+		height:40px;
+		line-height: 1em;
+		margin-bottom: .5em;
+	}
+
+	
+		
 }

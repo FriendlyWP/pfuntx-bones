@@ -78,14 +78,12 @@
 				</div>
 					<div class="topbar">
 						<div class="wrap">
-							<a href="#my-menu" class="menu-toggler"><i class="fa fa-bars"></i></a>							
+							<a href="#my-menu" class="menu-toggler"><i class="fa fa-bars"></i></a>		
 						</div>
 					</div>
 
 				<div id="inner-header" class="wrap cf">
-					<?php if (is_home() || is_front_page() ) { ?>
-						<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php header_image(); ?>" alt="<?php echo get_bloginfo('description'); ?>" /></a>
-					<?php } elseif (function_exists('get_field') && get_field('header_image') ) { ?>
+					<?php if (function_exists('get_field') && get_field('header_image') ) { ?>
 						<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php the_field('header_image'); ?>" alt="<?php echo get_bloginfo('description'); ?>" /></a>
 					<?php } else { ?>
 						<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/header-default.jpg" alt="<?php echo get_bloginfo('description'); ?>" /></a>
@@ -93,18 +91,44 @@
 					
 					
 
-					<?php if ( is_home() || is_single()  ) { // blog page ?>
+					<?php  // PAGE TITLES
+					if ( is_singular('event') || is_post_type_archive('event') ) { ?>
+						<h1 class="page-title" itemprop="headline">Happenings</h1>
+					<?php } 
+					// SEARCH
+					elseif (is_search()) { ?>
+						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+
+					<?php }
+					// BLOG AND SINGLE-POST
+					elseif ( is_home() || is_single('post')  ) {  ?>
 							<h1 class="page-title" itemprop="headline">Blog</h1>
-					<?php } elseif ( is_tax() ) { ?>
-							    	<?php post_type_archive_title(); ?><?php 
-							    	$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); 
-							    	$title = $term->name; ?>
-							    		<h1 class="page-title">
-							    	    		<?php echo $title; ?>
-							        	</h1>
-					<?php } elseif (is_post_type_archive()  ) { // not home page ?>
+					<?php } 
+					// TAXONOMY ARCHIVE
+					elseif ( is_tax() ) { ?>
+				    	<?php 
+
+				    	$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); 
+				    	$term_title = $term->name;
+
+						//var_dump(get_post_type_object( get_post_type() ));
+						$cpt = get_post_type_object( get_post_type() );
+
+				    	  ?>
+				    		<h1 class="page-title">
+				    	    	<?php echo  $cpt->labels->name; // . ': ' . $term_title; ?>
+				        	</h1>
+					<?php } 
+					// ARCHIVE PAGES
+					elseif (is_post_type_archive()  ) {  ?>
 							<h1 class="page-title" itemprop="headline"><?php post_type_archive_title(); ?></h1>
-					 <?php } elseif ( !is_front_page() ) { ?>
+					 <?php } 
+					 elseif ( is_singular(array('attraction', 'hotel', 'dining') ) ) {
+					 	$cpt = get_post_type_object( get_post_type() ); ?>
+					 	<h1 class="page-title" itemprop="headline"><?php echo  $cpt->labels->name; ?></h1>
+					 <?php }
+					 // EVERYTHING ELSE BUT NOT HOME
+					 elseif ( !is_front_page() ) { ?>
 				    	<h1 class="page-title"><?php the_title(); ?></h1>
 				    <?php } ?>
 				</div>
