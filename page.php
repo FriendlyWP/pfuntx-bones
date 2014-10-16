@@ -6,7 +6,7 @@
 
 						<div id="main" class="main-content cf" role="main">
 
-							<?php if ( function_exists('yoast_breadcrumb') ) {
+							<?php if ( function_exists('yoast_breadcrumb') && !is_front_page() ) {
 								yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 							} ?>
 

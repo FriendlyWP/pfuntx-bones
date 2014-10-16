@@ -31,13 +31,13 @@ function disable_default_dashboard_widgets() {
 	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'core' );  // Incoming Links Widget
 	remove_meta_box( 'dashboard_plugins', 'dashboard', 'core' );         // Plugins Widget
 
-	// remove_meta_box('dashboard_quick_press', 'dashboard', 'core' );   // Quick Press Widget
+	remove_meta_box('dashboard_quick_press', 'dashboard', 'core' );   // Quick Press Widget
 	remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'core' );   // Recent Drafts Widget
 	remove_meta_box( 'dashboard_primary', 'dashboard', 'core' );         //
 	remove_meta_box( 'dashboard_secondary', 'dashboard', 'core' );       //
 
 	// removing plugin dashboard boxes
-	remove_meta_box( 'yoast_db_widget', 'dashboard', 'normal' );         // Yoast's SEO Plugin Widget
+	//remove_meta_box( 'yoast_db_widget', 'dashboard', 'normal' );         // Yoast's SEO Plugin Widget
 
 	/*
 	have more plugin widgets you'd like to remove?
@@ -127,3 +127,25 @@ function bones_custom_admin_footer() {
 
 // adding it to the admin area
 add_filter( 'admin_footer_text', 'bones_custom_admin_footer' );
+
+
+/***************************************************************
+* Function pxlcore_give_edit_theme_options()
+* Adds widgets and menus to editors.
+***************************************************************/
+function pxlcore_give_edit_theme_options( $caps ) {
+	
+	/* check if the user has the edit_pages capability */
+	if( ! empty( $caps[ 'edit_pages' ] ) ) {
+		
+		/* give the user the edit theme options capability */
+		$caps[ 'edit_theme_options' ] = true;
+		
+	}
+	
+	/* return the modified capabilities */
+	return $caps;
+	
+}
+ 
+add_filter( 'user_has_cap', 'pxlcore_give_edit_theme_options' );

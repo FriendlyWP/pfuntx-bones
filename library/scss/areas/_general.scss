@@ -187,6 +187,10 @@ p {
 .info {
 	width: 70%;
 	float:left;
+
+	.home & {
+		display: none;
+	}
 }
 
 .vertical-gallery {
@@ -227,7 +231,7 @@ p {
 	
 	line-height:0;
 	
-	@include breakpoint(laptop) {
+	@include breakpoint(phablet) {
 		width:30%;
 		margin-right:4.5%;
 		float:right;
@@ -235,7 +239,7 @@ p {
 
 }
 .with-thumb {
-	@include breakpoint(laptop) {
+	@include breakpoint(phablet) {
 		width:65%;
 		float:right;
 	}

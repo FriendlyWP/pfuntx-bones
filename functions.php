@@ -238,3 +238,4 @@ function my_print_event_cat_colours(){
         }
     }
 }
+
