@@ -58,6 +58,15 @@ body {
 	}
 }
 
+.mobile-header {
+	display:block;
+	width:100%;
+	max-width:300px;
+	line-height:0;
+	margin:0 auto;
+	text-align:center;
+}
+
 /*********************
 LINK STYLES
 *********************/
@@ -175,9 +184,23 @@ p {
 	margin: 0 0 1.677em;
 }
 
-.map-link {
+.map-link, .directions-link {
 	display:inline-block;
 	float:right;
+}
+
+.directions-link {
+	max-width: 40%;
+	margin-top: 2.177em;
+	vertical-align: text-bottom;
+}
+
+.map-title {
+	margin-top: 1.677em;
+	width: 60%; 
+	float:left;
+	display:inline-block;
+	vertical-align:  text-bottom;
 }
 
 .gallery-link {
@@ -315,9 +338,7 @@ p {
 		text-overflow:ellipsis;	
 }
 
-.map-title {
-	margin-top: 1.677em;
-}
+
 
 .gallery-title {
 	margin:1.677em 0;
@@ -454,7 +475,7 @@ POSTS & CONTENT STYLES
 
 
 #breadcrumbs {
-	font-size:.8em;
+	font-size:.9em;
 	
 }
 

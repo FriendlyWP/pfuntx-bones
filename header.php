@@ -83,12 +83,15 @@
 					</div>
 
 				<div id="inner-header" class="wrap cf">
-					<?php if (function_exists('get_field') && get_field('header_image') ) { ?>
-						<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php the_field('header_image'); ?>" alt="<?php echo get_bloginfo('description'); ?>" /></a>
+					<?php if ( !wp_is_mobile() ) { ?>
+						<?php if (function_exists('get_field') && get_field('header_image') ) { ?>
+							<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php the_field('header_image'); ?>" alt="<?php echo get_bloginfo('description'); ?>" /></a>
+						<?php } else { ?>
+							<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/header-default.jpg" alt="<?php echo get_bloginfo('description'); ?>" /></a>
+						<?php } ?>
 					<?php } else { ?>
-						<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/header-default.jpg" alt="<?php echo get_bloginfo('description'); ?>" /></a>
+							<a class="mobile-header" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/login-logo.png" alt="<?php echo get_bloginfo('description'); ?>" /></a>
 					<?php } ?>
-					
 					
 
 					<?php  // PAGE TITLES

@@ -1,5 +1,12 @@
 .widget {
 	margin-bottom:1.5em;
+	width:100%;
+	float:left;
+
+	.wu-wrapper {
+		border:1px solid $light-gray;
+		padding:1em;
+	}
 }
 
 .widgettitle  {
@@ -7,6 +14,7 @@
 }
 
 .footer-widgets {
+	text-align: center;
 
 	.widget {
 		margin-bottom:0;
@@ -21,33 +29,39 @@
 		}
 	}
 
-	&.floats_1 {
-		& > div {
-			width:100%;
+	@include breakpoint(laptop) {
+		text-align: left;
+
+		&.floats_1 {
+			& > div {
+				width:100%;
+			}
+		}
+
+		&.floats_2 {
+			& > div {
+				width:48.3335%;
+			}
+		}
+
+		&.floats_3 {
+			& > div {
+				width:30%;
+			}
+		}
+
+		&.floats_4 {
+			& > div {
+				width:22.5002%;
+			}
+		}
+
+		&.floats_5 {
+			& > div {
+				width:17.3336%;
+			}
 		}
 	}
 
-	&.floats_2 {
-		& > div {
-			width:48.3335%;
-		}
-	}
-
-	&.floats_3 {
-		& > div {
-			width:30%;
-		}
-	}
-
-	&.floats_4 {
-		& > div {
-			width:22.5002%;
-		}
-	}
-
-	&.floats_5 {
-		& > div {
-			width:17.3336%;
-		}
-	}
+	
 }

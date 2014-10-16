@@ -20,6 +20,8 @@
     // var
     var $markers = $el.find('.marker');
 
+
+
     // vars
     var args = {
       zoom    : 16,
@@ -171,8 +173,9 @@
       <?php //echo $location['address']; ?>
       <span id="jump-map" class="cf"></span>
       <h3 class="map-title">Map</h3>
+      <a href="http://maps.google.com/maps?saddr=<?php echo $location['address'];?>" target="_blank" class="button small directions-link">Get Directions</a>
       <div class="acf-map">
-        <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+        <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"><a href="http://maps.google.com/maps?saddr=<?php echo $location['address'];?>" target="_blank">Get Directions</a></div>
       </div>
       <?php endif; ?>
                   

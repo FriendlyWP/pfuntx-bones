@@ -107,5 +107,5 @@ $classes = $eo_event_loop_args['class'];
 
 <?php endif; ?>
 
-<a class="button" href="<?php echo home_url('/events'); ?>">See all upcoming events</a>
+<a class="button small" href="<?php echo home_url('/happenings'); ?>">See all upcoming events</a>
 
