@@ -93,9 +93,9 @@ SCRIPTS & ENQUEUEING
 // loading modernizr and jquery, and reply script
 function bones_scripts_and_styles() {
 
-  global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
-
   if (!is_admin()) {
+
+  	 global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
 
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
@@ -152,7 +152,7 @@ function bones_theme_support() {
 	set_post_thumbnail_size(125, 125, true);
 
 	// wp custom background (thx to @bransonwerner for update)
-	add_theme_support( 'custom-background',
+	/* add_theme_support( 'custom-background',
 	    array(
 	    'default-image' => '',    // background image default
 	    'default-color' => '',    // background color default (dont add the #)
@@ -160,19 +160,19 @@ function bones_theme_support() {
 	    'admin-head-callback' => '',
 	    'admin-preview-callback' => ''
 	    )
-	);
+	); */
 
 	// rss thingy
 	add_theme_support('automatic-feed-links');
 
-	$args = array(
+	/* $args = array(
 		'flex-width'    => true,
 		'width'         => 980,
 		'flex-height'    => true,
 		'height'        => 200,
 		'default-image' => get_template_directory_uri() . '/library/images/header-home.jpg',
-	);
-	add_theme_support( 'custom-header', $args );	
+	); */
+	//add_theme_support( 'custom-header', $args );
 
 	// adding post format support
 	/* add_theme_support( 'post-formats',
@@ -277,7 +277,3 @@ function bones_excerpt_more($more) {
 	// edit here if you like
 	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read ', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
 }
-
-
-
-?>

@@ -18,13 +18,11 @@ Digging into WP - http://digwp.com/2010/10/customize-wordpress-dashboard/
 	- an example custom dashboard widget
 	- adding custom login css
 	- changing text in footer of admin
-
-
 */
 
 /************* DASHBOARD WIDGETS *****************/
-
-// disable default dashboard widgets
+// removing the dashboard widgets
+add_action( 'admin_menu', 'control_panel_changes' );
 function control_panel_changes() {
 	// remove_meta_box( 'dashboard_right_now', 'dashboard', 'core' );    // Right Now Widget
 	remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'core' ); // Comments Widget
@@ -42,7 +40,8 @@ function control_panel_changes() {
 	// removing plugin dashboard boxes
 	//remove_meta_box( 'yoast_db_widget', 'dashboard', 'normal' );         // Yoast's SEO Plugin Widget
 
-	echo '<style type="text/css">
+// following i think causes error on siteground hosting, returns blank page
+	/* echo '<style type="text/css">
 		#wp-admin-bar-wp-logo > .ab-item .ab-icon { 
 			background-image: url(' . get_bloginfo('stylesheet_directory') . '/library/images/favicons/favicon-16x16.png) !important; 
 			background-position: 0 0;
@@ -50,12 +49,11 @@ function control_panel_changes() {
 		#wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
 			background-position: 0 0;
 			}	
-		</style>';
+		</style>'; */
 }
 
 
-// removing the dashboard widgets
-add_action( 'admin_menu', 'control_panel_changes' );
+
 
 
 
@@ -96,6 +94,7 @@ add_filter( 'admin_footer_text', 'bones_custom_admin_footer' );
 * Function pxlcore_give_edit_theme_options()
 * Adds widgets and menus to editors.
 ***************************************************************/
+add_filter( 'user_has_cap', 'pxlcore_give_edit_theme_options' );
 function pxlcore_give_edit_theme_options( $caps ) {
 	
 	/* check if the user has the edit_pages capability */
@@ -111,4 +110,3 @@ function pxlcore_give_edit_theme_options( $caps ) {
 	
 }
  
-add_filter( 'user_has_cap', 'pxlcore_give_edit_theme_options' );

@@ -44,7 +44,7 @@ NAVIGATION STYLES
 
 nav {
 	display:inline-block;
-	width:80%;
+	width:76%;
 }
 .nav {
 	border-bottom: 0;
@@ -216,7 +216,7 @@ nav {
 	@include breakpoint(laptop) {
 		display:inline-block;
 		float:right;
-		width:19.8%;
+		width:23.9%;
 		background-color:$yellow;
 		position:relative;
 		line-height:50px;
@@ -244,9 +244,9 @@ nav {
 			a, a:visited {
 				display: block;
 				vertical-align: text-bottom;
-				line-height: 40px;
-				padding-top:5px;
+				line-height: 0;
 				padding-right:1.2em;
+				background-position: 100% 30%;
 
 				&:hover {
 					color:$red;

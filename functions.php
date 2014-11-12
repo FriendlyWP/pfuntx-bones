@@ -60,7 +60,7 @@ add_action( 'after_setup_theme', 'bones_ahoy' );
 // Thumbnail sizes
 
 
-add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
+//add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
@@ -177,6 +177,12 @@ if( function_exists('acf_add_options_sub_page') )
         'parent' => 'options-general.php',
         'capability' => 'manage_options'
     ));
+
+    acf_add_options_sub_page(array(
+        'title' => 'Section Header',
+        'parent' => 'edit.php?post_type=event',
+        'capability' => 'manage_options'
+    ));
 }
 
 /**** MENU SOCIAL ICONS ****/
@@ -239,3 +245,13 @@ function my_print_event_cat_colours(){
     }
 }
 
+// Usage:
+// get_id_by_slug('any-page-slug');
+function get_id_by_slug($page_slug) {
+  $page = get_page_by_path($page_slug);
+  if ($page) {
+    return $page->ID;
+  } else {
+    return null;
+  }
+}

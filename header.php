@@ -84,18 +84,48 @@
 
 				<div id="inner-header" class="wrap cf">
 					<?php if ( !wp_is_mobile() ) { ?>
-						<?php if (function_exists('get_field') && get_field('header_image') ) { ?>
-							<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php the_field('header_image'); ?>" alt="<?php echo get_bloginfo('description'); ?>" /></a>
-						<?php } else { ?>
-							<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/header-default.jpg" alt="<?php echo get_bloginfo('description'); ?>" /></a>
+
+						<?php if (function_exists('get_field')) { ?>
+
+						<?php if ( get_field('header_image') ) { ?>
+							<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php the_field('header_image'); ?>" alt="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>" /></a>
+						<?php } elseif ( (is_post_type_archive('event') || is_tax() || is_singular(array( 'attraction', 'hotel', 'dining', 'event' ))) ) { 
+								$queried_object = get_queried_object(); 
+								//var_dump($queried_object);
+								$tax = '';
+								$posttype = '';
+								if ( isset (get_queried_object()->taxonomy) ) {
+									$tax = $queried_object->taxonomy;
+								} elseif (isset ( get_queried_object()->post_type )) {
+									$posttype = $queried_object->post_type;
+								}
+								if ( $tax == 'dining_type' || $posttype == 'dining' ) { 
+									$page_id = get_id_by_slug('dining');
+									$img = get_field('header_image', $page_id);
+								} elseif ( $tax == 'attraction_type' || $posttype == 'attraction' ) { 
+									$page_id = get_id_by_slug('attractions');
+									$img = get_field('header_image', $page_id);
+								} elseif ( $posttype == 'hotel' ) { 
+									$page_id = get_id_by_slug('hotels');
+									$img = get_field('header_image', $page_id);
+								} elseif ( $tax == 'event-category' || $tax == 'event-venue' || $tax == 'event-tag' ||is_post_type_archive('event') || is_singular('event') ) { 
+									$img = get_field('happenings_header_image', 'option');
+								}
+							?>
+									<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo $img;  ?>" alt="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>" /></a>
+						<?php } else {
+							?>
+							<a class="header-image" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/header-default.jpg" alt="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>" /></a>
 						<?php } ?>
 					<?php } else { ?>
 							<a class="mobile-header" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php echo get_the_title() . ' | ' . get_bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/login-logo.png" alt="<?php echo get_bloginfo('description'); ?>" /></a>
-					<?php } ?>
+					<?php }
+					//} 
+				} ?>
 					
 
 					<?php  // PAGE TITLES
-					if ( is_singular('event') || is_post_type_archive('event') ) { ?>
+					if ( is_singular('event') || is_post_type_archive('event') || is_tax(array( 'event-category', 'event-tag', 'event-venue' ) )) { ?>
 						<h1 class="page-title" itemprop="headline">Happenings</h1>
 					<?php } 
 					// SEARCH
@@ -104,7 +134,7 @@
 
 					<?php }
 					// BLOG AND SINGLE-POST
-					elseif ( is_home() || is_single('post')  ) {  ?>
+					elseif ( is_home() || is_category() || is_tag() || is_singular('post')  ) {  ?>
 							<h1 class="page-title" itemprop="headline">Blog</h1>
 					<?php } 
 					// TAXONOMY ARCHIVE
@@ -121,7 +151,7 @@
 				    		<h1 class="page-title">
 				    	    	<?php echo  $cpt->labels->name; // . ': ' . $term_title; ?>
 				        	</h1>
-					<?php } 
+					<?php }
 					// ARCHIVE PAGES
 					elseif (is_post_type_archive()  ) {  ?>
 							<h1 class="page-title" itemprop="headline"><?php post_type_archive_title(); ?></h1>

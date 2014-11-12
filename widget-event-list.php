@@ -79,6 +79,7 @@ $classes = $eo_event_loop_args['class'];
 				// Categories with classes on links
 				$cats = get_the_terms(get_the_ID(),'event-category');
 				if ( $cats && ! is_wp_error( $cats ) ) {
+					$cat_list = '';
 					$cat_links = array();
 					foreach ( $cats as $cat ) {
 						$link = get_term_link($cat);

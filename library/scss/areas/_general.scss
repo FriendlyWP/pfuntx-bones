@@ -163,6 +163,10 @@ h6 {
 	a {
 		border-bottom:none;
 	}
+
+	.archive & {
+		font-size:1.5em;
+	}
 }
 .section-title {
 	text-transform: none;
@@ -286,6 +290,7 @@ p {
 		padding:0 1%;
 		position:relative;
 		float:left;
+		line-height: 100%;
 
 		@include breakpoint(laptop) {
 			width: 85%;
@@ -469,6 +474,10 @@ POSTS & CONTENT STYLES
 		padding: 1.5em;
 		margin: 0 0 1.5em;
 		border-radius: 3px;
+	}
+
+	:last-child {
+		margin-bottom: 0;
 	}
 
 } /* end .entry-content */
