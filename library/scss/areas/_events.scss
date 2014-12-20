@@ -76,19 +76,22 @@
 .event-entry-meta {
 	.eo-event-meta {
 		float:right;
+		width: 38%;
+		padding-left:10px;
 	}
 	time {
 		font-weight:700;
 		font-size: 1.1em;
 		color:$red;
 		width:58%;
+		margin-right:4%;
 		display: block;
 	}
 
 	p {
 		width:58%;
 		float:left;
-
+		margin-right:4%;
 	}
 }
 .ew-catlink {

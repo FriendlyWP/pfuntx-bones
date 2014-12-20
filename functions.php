@@ -255,3 +255,14 @@ function get_id_by_slug($page_slug) {
     return null;
   }
 }
+
+//add_action( 'pre_get_posts', 'custom_post_type_listings', 1 );
+function custom_post_type_listings ( $query ) {
+
+  if ( !is_admin() && ( is_tax('attraction_type') || is_tax('dining_type') ) )  {
+    $query->set( 'posts_per_page', -1 );
+    $query->set( 'orderby', 'title' );
+    $query->set( 'order', 'ASC' );
+    return;
+  }
+}
